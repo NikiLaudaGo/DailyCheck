@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- handlermapping -->
+<bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
+<bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
+
+<!-- viewResolver -->
+<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	<property name="viewClass" value="org.springframework.web.servelt.view.JstlView"/>
+	<property name="prefix" value="/WEB-INF/jsp"/>
+	<property name="suffix" value=".jsp"/>
+</bean>
